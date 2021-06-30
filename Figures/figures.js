@@ -84,6 +84,25 @@ function calcularAreaTriangle(){
     alert(`El area del triangulo es ${areaTriangle(base, height)} cms^2`);
 }
 
+function calcularHeightTriangle() {
+    const side1 = parseInt(document.getElementById("isoSide1").value);
+    const side2 = parseInt(document.getElementById("isoSide2").value);
+    const base = parseInt(document.getElementById("isoBase").value);
+
+    if (side1 == side2){
+        let height = Math.sqrt((side1**2)-((base**2)/4));
+        let result = `Este es un triangulo isosceles y su altura es ${height} cms`
+
+        return result;
+
+    } else {
+        let noResult = alert (`Tu triangulo es cualquier otra cosa menos isosceles`);
+
+        return noResult;
+    }
+
+}
+
 
 /* CIRCLE */
 
