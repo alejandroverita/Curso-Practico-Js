@@ -54,7 +54,7 @@ const printAlert = (info) => {
 }
 
 const printDiscount = (discount) => {
-    let discountNode = document.querySelector('.card__discount')
+    let discountNode = document.querySelector('.card_discount')
 
     discountNode.textContent = `-${discount}%`
 }
