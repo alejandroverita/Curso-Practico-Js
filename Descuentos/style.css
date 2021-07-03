@@ -1,0 +1,128 @@
+:root{
+    --dark: #22223b;
+    --white: #edf2fb;
+    --open: "Open Sans", sans-serif;
+}
+
+*{
+    font-size: 10px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--open);
+
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+    width: 100%;
+}
+
+
+main{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+}
+
+header{
+    width: 100%;
+}
+
+h1{
+    /* color: var(--white); */
+    font-size: 3.5rem;
+    letter-spacing: 5px;
+    margin: 0;
+    padding-top: 10px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+
+.dataOut{
+    position: relative;
+    margin: 20px auto;
+}
+
+.card{
+    border-radius: 10px;
+    border: solid 1px #222;
+    overflow: hidden;
+}
+
+.cardImage{
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: auto;
+}
+
+.cardPrecioInicial, .cardPrecioFinal {
+    text-align: center;
+    font-size: 2rem;
+    color: #ddd;
+    background-color: #222;
+    font-family: cursive;
+}
+
+.card_discount {
+    border-radius: 100%;
+    width: 7rem;
+    height: 7rem;
+    background-color: tomato;
+    position: absolute;
+    top: -5%;
+    right: -10%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    font-size:2rem;
+    font-family: cursive;
+    color: white;
+    transition: all 1s;
+}
+
+.card_discount:hover{
+    width: 10rem;
+    height: 10rem;
+    font-size:2.5rem;
+    background-color: #222;
+}
+
+.cardPrecioIncial{
+    text-decoration: line-through;
+}
+
+button{
+    padding:15px;
+    background-color:  rgb(72, 158, 255);
+    color: #fff;
+    font-size:2rem;
+    border-radius: 15px;
+    outline:none;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color:  rgb(58, 127, 207);
+}

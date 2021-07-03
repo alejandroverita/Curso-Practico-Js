@@ -5,12 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Percents and Discounts</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="main">
         <header class="header">
-            <h1>Percents and Discounts</h1>
+            <h1>Porcentajes y descuentos</h1>
         </header>
+
+        <section class="dataIn">
+            <h2>Calcula el precio a pagar de tus productos con descuentos</h2>
+            <form action="">
+                
+                <input type="number" id="inputPrice" placeholder="Precio producto">
+
+              
+                <input max="100" type="number" id="inputDiscount" placeholder="% Descuento">
+
+                
+                <input type="text" id="inputCoupon" placeholder="Cupon">
+
+            </form>
+        </section>
+        
+        <section class="dataOut">
+            
+            <div class="card">
+
+                <p class="cardPrecioInicial" id="finalPrice">
+                    Precio Inicial
+                </p>
+
+                <img src="./descarga.jpg" alt="" class="cardImage">
+    
+                <p class="cardPrecioFinal">
+                    Precio Final
+                </p>
+            </div>
+            <span class="card_discount">%</span>
+        </section>
+        
+        <section class="dataShow">
+            
+            <button type="button" onClick="discountProductPrice()">Calcular</button>
+
+        </section>
     </div>
     <script src="./descount.js"></script>
 </body>
