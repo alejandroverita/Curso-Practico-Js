@@ -4,11 +4,16 @@ const discountPrice = (price, discount) => (price * (100 - discount)) / 100;
 const discountProductPrice = () => {
 
     /* captura valores de los inputs html */
-    let inputPrice = document.getElementById("inputPrice").value;
+    let inputPriceHTML = document.getElementById("inputPrice").value;
 
-    let inputDiscount = document.getElementById("inputDiscount").value;
+    let inputPrice=Number(inputPriceHTML);
 
-    let inputCoupon = document.getElementById("inputCoupon").value;
+    let inputDiscountHTML = document.getElementById("inputDiscount").value;
+
+    let inputDiscount = Number(inputDiscountHTML);
+
+    let inputCoupon = document.getElementById("inputCoupon").value;     
+
 
     let finalPrice;
 
@@ -34,9 +39,13 @@ const discountProductPrice = () => {
         printResult(finalPrice);
         printDiscount(inputDiscount);
 
-    } else if (descuento>=100){
+    } 
+    
+    else if (descuento>=100){
         printAlert("Demasiado Descuento");
-    } else {
+    } 
+    
+    else {
         printAlert("Faltan datos");
     }
 }
